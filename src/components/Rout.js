@@ -3,9 +3,8 @@ import { Router, Routes, Route } from "react-router-dom";
 import Auth from "../routes/Auth";
 import Home from "../routes/Home";
 
-function Rout() {
+function Rout({ isLoggedIn }) {
 
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
     return (
         <>
             <Routes>
