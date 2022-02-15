@@ -56,4 +56,5 @@ function Profile({ refreshUSer, isLoggedIn, userObj }) {
     );
 };
 
+
 export default Profile;

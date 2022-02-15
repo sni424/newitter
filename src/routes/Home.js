@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from "react";
 import Navigation from "../components/Navigation";
+import Nweet from "../components/Nweet"
 import { v4 as uuidv4 } from "uuid";
 import { collection, orderBy, query, addDoc, serverTimestamp, onSnapshot } from "firebase/firestore";
 import { ref, uploadString, getDownloadURL } from "firebase/storage";
 import { dbService, storageService } from "../fBase"
-import Nweet from "components/Nweet";
 
 
 function Home({ isLoggedIn, userObj }) {
